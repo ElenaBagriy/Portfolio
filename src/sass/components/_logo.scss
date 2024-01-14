@@ -1,0 +1,17 @@
+.logo {
+    color: var(--primary-text-color);
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    transition: color var(--transition-dure-and-function);
+
+
+    &:hover,
+    :focus {
+        color: var(--accent-color);
+    }
+}

@@ -1,0 +1,15 @@
+.divider {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    width: 263px;
+    height: 4px;
+    background-color: var(--accent-color);
+
+}
+
+.divider--portfolio {
+    width: 100%;
+    height: 1px;
+    background-color: var(--accent-color);
+}

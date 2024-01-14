@@ -4,13 +4,328 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Домашнє завдання #7 Головна</title>
+    <title>Bahrii Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./images/svg/logo/Odesa_logo.svg"
+    />
+    <link rel="stylesheet" href="../css/index.min.css" />
 </head>
 <body>
-    <header>SOME TEXT</header>
+    <header >
+      
+      <div class="container container--header">
+        <a href="./index.html" class="logo">Olena Bahrii</a>
+        <nav>
+          <ul class="site-nav">
+            <li>
+              <a href="#top" class="site-nav__link">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="site-nav__link">About</a>
+            </li>
+            <li>
+              <a href="#projects" class="site-nav__link">Projects</a>
+            </li>
+            <li>
+              <a href="#contact" class="site-nav__link site-nav__link--contrast">Contact</a>
+            </li>
+      
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+          <h1 class="hero__title">Olena Bahrii</h1>
+          <div class="divider"></div>
+          <p class="hero__text">I am a Front-End Developer dedicated to building intuitive, visually appealing, and user-centric web solutions. Let's make the web a more beautiful place, one site at a time!</p>
+          <ul class="hero__list">
+            <li>
+              <a href="#projects" class="button">Projects</a>
+            </li>
+            <li>
+              <a href="#contact" class="button button--primary">Contact</a>
+            </li>
+          </ul>
+      </section>
+      <section class="section" id="about">
+        <div class="container">
+          <h2 class="section__title">About</h2>
+          <div class="divider"></div>
+
+          <p class="about">
+            Hello! I'm Olena, a passionate and dedicated front-end developer with a flair for creating engaging, user-friendly web experiences. My journey into web development began during my studies in GoIT school at Ukraine in 2022, where I discovered my love for coding. I specialize in crafting modern, responsive websites using HTML, CSS, JavaScript and a sprinkle of creativity. My experience with frameworks like React has enabled me to build interactive and dynamic web applications. I am continually learning and staying updated with the latest industry trends and technologies. What drives me is the joy of turning ideas into reality and the constant pursuit of improving user experience. I believe that a great website isn't just about the code, it's about creating a seamless and enjoyable journey for the user. During my education, I've had the opportunity to work on to work on individual projects and as part of a team. These experiences have not only honed my technical skills but also taught me the importance of clear communication, teamwork, and meticulous attention to detail. When I'm not coding, I enjoy travelling, driving, or reading fantasy. I'm excited to bring my skills and passion to a dynamic team where I can continue to grow and contribute to impactful projects. Feel free to browse my portfolio to see my work and get in touch if you think we could create something amazing together!
+          </p>
+          <a class="button" href="https://drive.google.com/file/d/16ZPvODrP7b0KeEfIH1yaFg85XAJWDUu2/view?usp=drive_link" rel="noopener" target="_blank">
+            RESUME
+          </a>
+
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <h2 class="section__title">Projects</h2>
+          <div class="divider"></div>
+          <ul class="portfolio">
+            <li class="portfolio__item">
+              <div class="thumb">
+                <!-- <picture>
+                  <source srcset="/src/images/ice-cream.webp" type="image/webp" />
+                  <source srcset="/src/images/ice-cream.jpeg" type="image/jpeg" />
+                  <img src="/src/images/ice-cream.jpeg" alt="ICE CREAM website" />
+                </picture> -->
+                <picture>
+                  <source srcset="./images/mobile/icecream-mobile.webp" media="(max-width: 743px)" type="image/webp">
+                  <source srcset="./images/mobile/icecream-mobile.jpeg" media="(max-width: 743px)" type="image/jpeg">
+                  <source srcset="./images/tablet/pic2.jpg 1x, ./images/tablet/pic2@2x.jpg 2x" media="(max-width: 1199px)" type="image/jpeg">
+                  <source srcset="./images/desktop/pic2.jpg 1x, ./images/desktop/pic2@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg">
+                  <img src="./images/so-yummy-dark.jpeg" alt="ICE CREAM website">
+                </picture>
+              </div>
+              <div class="portfolio__wrapper">
+              <h3 class="portfolio__title">ICE CREAM</h3>
+              <div class="divider divider--portfolio"></div>
+              <p class="portfolio__description">
+                A landing page for an ice cream company. Here you can find information about the company, its products, and its services. You can view contacts and fill out a feedback form. The project uses lots of unobtrusive animations and a responsive design that highlights the features of the product.
+              </p>
+              <ul class="links-list">
+                <li><a href="https://github.com/yuriykosh/goit-project-team" rel="noreferrer noopener" target="_blank">
+                  <svg class="auth-modal-close" width="35" height="35">
+                    <use href="./images/svg/sprite.svg#github-link"></use>
+                  </svg>
+                </a></li>
+                <li><a href="https://yuriykosh.github.io/goit-project-team/" rel="noreferrer noopener" target="_blank">
+                  <svg class="auth-modal-close" width="35" height="35">
+                    <use href="./images/svg/sprite.svg#link"></use>
+                  </svg>
+                </a></li>
+              </ul>
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <div class="thumb">
+                <picture>
+                  <source srcset="./images/mobile/webstudio-mobile.webp" media="(max-width: 743px)" type="image/webp">
+                  <source srcset="./images/mobile/webstudio-mobile.jpeg" media="(max-width: 743px)" type="image/jpeg">
+                  <source srcset="/src/images/web-studio.webp" type="image/webp" />
+                  <source srcset="/src/images/web-studio.jpeg" type="image/jpeg" />
+                  <img src="/src/images/web-studio.jpeg" alt="WEB STUDIO website" />
+                </picture>
+              </div>
+              <div class="portfolio__wrapper">
+              <h3 class="portfolio__title">WEB STUDIO</h3>
+              <div class="divider divider--portfolio"></div>
+              <p class="portfolio__description">
+                A project focused on the responsive design of the main page, ensuring optimal display on various devices from 320px and up. It features a mobile menu for convenient navigation. Technical highlights include responsive images, media queries, and a styled mobile menu.
+              </p>
+              <ul class="links-list">
+                <li><a href="https://github.com/ElenaBagriy/goit-markup-hw-08" rel="noreferrer noopener" target="_blank">
+                  <svg class="auth-modal-close" width="35" height="35">
+                    <use href="./images/svg/sprite.svg#github-link"></use>
+                  </svg>
+                </a></li>
+                <li><a href="https://elenabagriy.github.io/goit-markup-hw-08/" rel="noreferrer noopener" target="_blank">
+                  <svg class="auth-modal-close" width="35" height="35">
+                    <use href="./images/svg/sprite.svg#link"></use>
+                  </svg>
+                </a></li>
+              </ul>
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <div class="thumb">
+                <picture>
+                  <source srcset="./images/mobile/filmoteka-mobile-min.webp" media="(max-width: 743px)" type="image/webp">
+                  <source srcset="./images/mobile/filmoteka-mobile-min.jpeg" media="(max-width: 743px)" type="image/jpeg">
+                  <source srcset="/src/images/filmoteka.webp" type="image/webp" />
+                  <source srcset="/src/images/filmoteka.jpeg" type="image/jpeg" />
+                  <img src="/src/images/filmoteka.jpeg" alt="FILMOTEKA website" />
+                </picture>
+              </div>
+              <div class="portfolio__wrapper">
+              <h3 class="portfolio__title">FILMOTEKA</h3>
+              <div class="divider divider--portfolio"></div>
+              <p class="portfolio__description">
+                A web application to search and watch popular movies. The site has a handy gallery, a search by title, and pages of movie descriptions. The user can also add movies to the queue or to the list of watched movies.
+              </p>
+              <ul class="links-list">
+                <li><a href="https://github.com/yuriykosh/goit--team-project--js" rel="noreferrer noopener" target="_blank">
+                  <svg class="auth-modal-close" width="35" height="35">
+                    <use href="./images/svg/sprite.svg#github-link"></use>
+                  </svg>
+                </a></li>
+                <li><a href="https://yuriykosh.github.io/goit--team-project--js/" rel="noreferrer noopener" target="_blank">
+                  <svg class="auth-modal-close" width="35" height="35">
+                    <use href="./images/svg/sprite.svg#link"></use>
+                  </svg>
+                </a></li>
+              </ul>
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <div class="thumb">
+                <picture>
+                  <source srcset="./images/mobile/soyummy-mobile.webp" media="(max-width: 743px)" type="image/webp">
+                  <source srcset="./images/mobile/soyummy-mobile.jpeg" media="(max-width: 743px)" type="image/jpeg">
+                  <source srcset="/src/images/so-yummy-light.webp" type="image/webp" />
+                  <source srcset="/src/images/so-yummy-light.jpeg" type="image/jpeg" />
+                  <img src="/src/images/so-yummy-light.jpeg" alt="JUMMY APP" />
+                </picture>
+              </div>
+              <div class="portfolio__wrapper">
+              <h3 class="portfolio__title">JUMMY APP</h3>
+              <div class="divider divider--portfolio"></div>
+              <p class="portfolio__description">
+                We all like to save recipes that we won't make later. SoYummy has the power to change that. The web app allows you to save your favorite dishes and automatically turn them into shopping lists. Users can search for recipes in the collection and add their own dishes. There were used oodles of features in the design: light and dark theme, pop-ups, animations. Check it out!
+              </p>
+              <ul class="links-list">
+                <li><a href="https://github.com/ElenaBagriy/so-yummy-react-app" rel="noreferrer noopener" target="_blank">
+                  <svg class="auth-modal-close" width="35" height="35">
+                    <use href="./images/svg/sprite.svg#github-link"></use>
+                  </svg>
+                </a></li>
+                <li><a href="https://elenabagriy.github.io/so-yummy-react-app/" rel="noreferrer noopener" target="_blank">
+                  <svg class="auth-modal-close" width="35" height="35">
+                    <use href="./images/svg/sprite.svg#link"></use>
+                  </svg>
+                </a></li>
+              </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <h2 class="section__title">Contact</h2>
+          <div class="divider"></div>
+          <ul class="contact-list">
+            <li><a href="https://t.me/Elena_Bagriy" rel="noreferrer noopener" target="_blank">
+              <svg class="auth-modal-close" width="35" height="35">
+                <use href="./images/svg/sprite.svg#telegram"></use>
+              </svg>
+            </a></li>
+            <li><a href="https://www.linkedin.com/in/elena-bagriy/" rel="noreferrer noopener" target="_blank">
+              <svg class="auth-modal-close" width="35" height="35">
+                <use href="./images/svg/sprite.svg#linkedin"></use>
+              </svg>
+            </a></li>
+            <li><a href="https://github.com/ElenaBagriy" rel="noreferrer noopener" target="_blank">
+              <svg class="auth-modal-close" width="35" height="35">
+                <use href="./images/svg/sprite.svg#github-link"></use>
+              </svg>
+            </a></li>
+            <li>
+              <a href="tel:+41765433827">
+                <svg class="auth-modal-close" width="35" height="35">
+                  <use href="./images/svg/sprite.svg#phone"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:elena.bagriy1989@gmail.com">
+                <svg class="auth-modal-close" width="35" height="35">
+                  <use href="./images/svg/sprite.svg#email"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <form 
+          class="form" 
+          >
+          <div class="form__wrapper">
+            <label class="form__label">Name
+              <input type="text" name="name" class="form__input" placeholder="John Doe">
+            </label>
+            <label class="form__label">Email
+              <input type="email" name="email" class="form__input" placeholder="example@example.com">
+            </label>
+
+          </div>
+            <label class="form__label">Message
+              <textarea name="message" class="form__textarea" placeholder="Enter your message here"></textarea>
+            </label>
+            <button type="submit" class="button button--contrast">SEND</button>
+          </form>
+        </div>
+        
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__background"></div>
+      <div class="container">
+        <!-- <ul>
+          <li>
+            <address>
+              <span>Adresse:</span>
+              <p>Switzerland</p>
+              <p>
+                Erlenstrasse 10, 8134 Adliswil
+              </p>
+            </address>
+          </li>
+          <li>
+            <span>Phone number:</span>
+            <a href="tel:+41765433827">
+              076 543 38 27
+            </a>
+          </li>
+          <li>
+            <span>E-mail:</span>
+            <a href="mailto:elena.bagriy1989@gmail.com">
+              elena.bagriy1989@gmail.com
+            </a>
+          </li>
+        </ul> -->
+        <ul class="contact-list">
+          <li><a href="https://t.me/Elena_Bagriy" rel="noreferrer noopener" target="_blank">
+            <svg class="auth-modal-close" width="35" height="35">
+              <use href="./images/svg/sprite.svg#telegram"></use>
+            </svg>
+          </a></li>
+          <li><a href="https://www.linkedin.com/in/elena-bagriy/" rel="noreferrer noopener" target="_blank">
+            <svg class="auth-modal-close" width="35" height="35">
+              <use href="./images/svg/sprite.svg#linkedin"></use>
+            </svg>
+          </a></li>
+          <li><a href="https://github.com/ElenaBagriy" rel="noreferrer noopener" target="_blank">
+            <svg class="auth-modal-close" width="35" height="35">
+              <use href="./images/svg/sprite.svg#github-link"></use>
+            </svg>
+          </a></li>
+          <li>
+            <a href="tel:+41765433827">
+              <svg class="auth-modal-close" width="35" height="35">
+                <use href="./images/svg/sprite.svg#phone"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:elena.bagriy1989@gmail.com">
+              <svg class="auth-modal-close" width="35" height="35">
+                <use href="./images/svg/sprite.svg#email"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="basement-copyright">
+          <p class="basement-title">© 2024 - Olena Bahrii.</p>
+        </div>
+
+      </div>
+    </footer>
+    <script src="./js/sendEmail.js"></script>
 </body>
 </html>
