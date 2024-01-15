@@ -1,0 +1,24 @@
+.btn-to-top {
+    display: none;
+}
+
+.btn-to-top--visible {
+    display: block;
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    opacity: 0.6;
+    font-size: 49px;
+    color: black;
+
+    transition-property: opacity, scale;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    :focus {
+        cursor: pointer;
+       scale: 1.1;     
+       opacity: 1;
+    }
+}

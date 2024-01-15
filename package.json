@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "posthtml-include": "^1.7.4"
+  }
+}

@@ -1,18 +1,18 @@
 .site-nav {
-    display: flex;
-    gap: 25px;
-    flex-direction: column;
+    display: none;
 
     @media screen and (min-width: 1024px) {
+        display: flex;
         flex-direction: row;
-        gap: 0px;
-        width: 620px;
+        gap: 10px;
         justify-content: space-between;
         align-items: center;
     }
 }
 
 .site-nav__link {
+    padding: 10px 35px;
+    border-radius: 10px;
     color: var(--primary-text-color);
     font-family: Inter;
     font-size: 24px;
@@ -20,24 +20,16 @@
     font-weight: 400;
     line-height: normal;
 
-    transition: background-color var(--transition-dure-and-function), color var(--transition-dure-and-function), box-shadow var(--transition-dure-and-function), border-color var(--transition-dure-and-function);
+    transition: background-color var(--transition-dure-and-function), color var(--transition-dure-and-function);
 
     &:hover,
     :focus {
         color: var(--accent-color);
+        background-color: var(--primary-text-color);
     }
-}
 
-.site-nav__link--contrast {
-    padding: 10px 35px;
-    border-radius: 10px;
-    color: var(--white-color);
-    background-color: var(--primary-text-color);
-
-    &:hover,
-    :focus {
-        background-color: var(--accent-color);
-        border-color: var(--accent-color);
-        color: var(--primary-text-color);
+    &.active {
+        color: var(--white-color);
+        background-color: var(--primary-text-color);
     }
 }

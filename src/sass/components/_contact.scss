@@ -1,0 +1,131 @@
+.contact {
+    padding: 35px 0;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--primary-text-color);
+    max-width: 1600px;
+
+    @media screen and (min-width: 744px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+}
+
+.contact__title {
+    margin: 0 auto 35px;
+    padding: 10px 0;
+    color: var(--primary-text-color);
+    text-align: center;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contact__adresse {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+    @media screen and (min-width: 744px) {
+        font-size: 18px;
+    }
+}
+
+.contact__text-list {
+    list-style-type: disc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+    margin: 25px 0;
+    padding: 10px 0;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+    @media screen and (min-width: 744px) {
+        font-size: 18px;
+    }
+}
+
+.contact__item {
+    text-align: left;
+}
+
+.contact__link {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--primary-text-color);
+    transition: color var(--transition-dure-and-function);
+
+    @media screen and (min-width: 744px) {
+        font-size: 18px;
+    }
+
+    &:hover,
+    :focus {
+        // color: var(--accent-color);
+        text-decoration: underline;
+    }
+}
+
+.contact-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contact-list__link {
+    svg {
+        transition: scale var(--transition-dure-and-function);
+    }
+
+    &:hover,
+    :focus {
+        svg {
+            scale: 1.2;
+        }
+
+    }
+}
+
+.contact__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 35px 0;
+
+    @media screen and (min-width: 744px) {
+        flex-direction: row;
+        align-items: center;
+        font-size: 18px;
+    }
+
+}
+
+.contact__photo {
+    width: 190px;
+    border-radius: 10px;
+    border: 4px solid var(--accent-color);
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.contact__accent-text {
+    font-weight: 700;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahrii Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/src/images/svg/Odesa_logo.svg"
+    />
+    <link rel="stylesheet" href="/src/css/index.min.css" />
+    <script src="https://unpkg.com/htmlincludejs"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header__background"></div>
+    <div class="container container--header">
+      <a href="/src/index.html" class="logo"><p>Olena</p><p>Bahrii</p></a>
+      <nav>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-toggle__button" width="32" height="32">
+            <use href="/src/images/svg/sprite.svg#menu"></use>
+          </svg>
+        </button>
+        <ul class="site-nav">
+          <li>
+            <a href="/src/index.html" class="site-nav__link js-nav-link">Home</a>
+          </li>
+          <li>
+            <a href="/src/index.html#about" class="site-nav__link js-nav-link">About</a>
+          </li>
+          <li>
+            <a href="/src/index.html#projects" class="site-nav__link js-nav-link">Projects</a>
+          </li>
+          <li>
+            <a href="./index.html" class="site-nav__link js-nav-link active">Blog</a>
+          </li>
+          <li>
+            <a href="/src/partials/contact/index.html" class="site-nav__link js-nav-link">Contact</a>
+          </li>
+    
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="blog">
+      <div class="container">
+      <h1 class="blog__title">Blog</h1>
+      <div class="divider divider--contrast"></div>
+      <p class="blog__description">Welcome to "Coding Chronicles with Olena Bahrii", where I document my daily adventures in the world of programming. This blog is a mix of personal learning experiences, useful resources, problem-solving journeys, and future learning goals in programming. Whether you're a seasoned coder, a beginner, or just curious about the field, join me as I navigate the complexities of programming, sharing insights and resources that I find valuable along the way. Let's dive into the code and grow together in this ever-evolving digital landscape!</p>
+    </div>
+    </section>
+    <section>
+      <div class="container">
+      <h2 class="blog__secondary-title">Coding Chronicles with Olena Bahrii</h2>
+      <div class="divider"></div>
+      <ul class="blog__list">
+        <li>
+          <a href="./first-entry/index.html" class="blog__link">Conquering React Hooks: useState and useEffect</a>
+        </li>
+        <li>
+          <a href="./second-entry/index.html" class="blog__link">JavaScript Async/Await: Making Promises</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+    </main>
+    <footer class="footer">
+      <div class="footer__background"></div>
+      <div class="container">
+          <ul class="contact-list">
+              <li><a href="https://t.me/Elena_Bagriy" rel="noreferrer noopener" target="_blank" class="contact-list__link">
+                  <svg class="auth-modal-close" width="35" height="35">
+                      <use href="/src/images/svg/sprite.svg#telegram"></use>
+                  </svg>
+              </a></li>
+              <li><a href="https://www.linkedin.com/in/elena-bagriy/" rel="noreferrer noopener" target="_blank" class="contact-list__link">
+                  <svg class="auth-modal-close" width="35" height="35">
+                      <use href="/src/images/svg/sprite.svg#linkedin"></use>
+                  </svg>
+            </a></li>
+            <li><a href="https://github.com/ElenaBagriy" rel="noreferrer noopener" target="_blank" class="contact-list__link">
+              <svg class="auth-modal-close" width="35" height="35">
+                  <use href="/src/images/svg/sprite.svg#github-link"></use>
+              </svg>
+          </a></li>
+            <li>
+              <a href="tel:+41765433827" class="contact-list__link">
+                <svg class="auth-modal-close" width="35" height="35">
+                  <use href="/src/images/svg/sprite.svg#phone"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:elena.bagriy1989@gmail.com" class="contact-list__link">
+                <svg class="auth-modal-close" width="35" height="35">
+                  <use href="/src/images/svg/sprite.svg#email"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="basement-copyright">
+            <p class="basement-title">© 2024 - Olena Bahrii.</p>
+          </div>
+        </div>
+        <a class="btn-to-top" title="Return to top">
+          <svg class="auth-modal-close" width="40" height="40">
+            <use href="/src/images/svg/sprite.svg#arrow-up"></use>
+          </svg>
+        </a>
+      </footer>
+
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg class="menu-toggle__button" width="32" height="32">
+            <use href="/src/images/svg/sprite.svg#close">
+            </use>
+          </svg>
+        </button>
+      
+        <div class="flex-container">
+          <ul class="mobile-menu">
+            <li>
+              <a href="/src/index.html" class="mobile-menu__link js-nav-link">Home</a>
+            </li>
+            <li>
+              <a href="/src/index.html#about" class="mobile-menu__link js-nav-link">About</a>
+            </li>
+            <li>
+              <a href="/src/index.html#projects" class="mobile-menu__link js-nav-link">Projects</a>
+            </li>
+            <li>
+              <a href="/src/partials/blog/index.html" class="mobile-menu__link js-nav-link active">Blog</a>
+            </li>
+            <li>
+              <a href="/src/partials/contact/index.html" class="mobile-menu__link js-nav-link">Contact</a>
+            </li>
+          </ul>  
+        </div>
+      </div>
+      <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+      <script src="/src/index.js" type="module"></script>
+</body>
+</html>
