@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bahrii Blog</title>
+    <title>Bahrii Blog Second Entry</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
@@ -42,39 +42,68 @@
             <a href="../../index.html#projects" class="site-nav__link js-nav-link">Projects</a>
           </li>
           <li>
-            <a href="./index.html" class="site-nav__link js-nav-link active">Blog</a>
+            <a href="../index.html" class="site-nav__link js-nav-link active">Blog</a>
           </li>
           <li>
-            <a href="../contact/index.html" class="site-nav__link js-nav-link">Contact</a>
+            <a href="../../contact/index.html" class="site-nav__link js-nav-link">Contact</a>
           </li>
     
         </ul>
       </nav>
     </div>
   </header>
-
   <main>
-    <section class="blog">
+    <section class="post">
       <div class="container">
-      <h1 class="blog__title">Blog</h1>
+        <a href="../index.html" class="post__back-button">Back</a>
+      <h1 class="post__title">JavaScript Async/Await: Making Promises</h1>
       <div class="divider divider--contrast"></div>
-      <p class="blog__description">Welcome to "Coding Chronicles with Olena Bahrii", where I document my daily adventures in the world of programming. This blog is a mix of personal learning experiences, useful resources, problem-solving journeys, and future learning goals in programming. Whether you're a seasoned coder, a beginner, or just curious about the field, join me as I navigate the complexities of programming, sharing insights and resources that I find valuable along the way. Let's dive into the code and grow together in this ever-evolving digital landscape!</p>
-    </div>
-    </section>
-    <section>
-      <div class="container">
-      <h2 class="blog__secondary-title">Coding Chronicles with Olena Bahrii</h2>
-      <div class="divider"></div>
-      <ul class="blog__list">
+      <div class="post__content">
+      <h2 class="post__secondary-title">Date: <span>23.10.2022</span></h2>
+      <h2 class="post__secondary-title">Content: </h2>
+      <p class="post__content">Today's journey took me into the heart of JavaScript's asynchronous patterns, specifically the elegant async/await syntax. It's a powerful way to work with promises, making asynchronous code look and behave a bit more like synchronous code.</p>
+      <h2 class="post__secondary-title">What I Learned:</h2>
+      <ul class="post__list">
         <li>
-          <a href="./first-entry/index.html" class="blog__link">Conquering React Hooks: useState and useEffect</a>
+            <p class="post__content">
+                <span>Understanding Async/Await: </span>These two keywords transform how we handle promises. I learned that marking a function with async means it always returns a promise, and await can be used to pause the code until that promise settles.
+            </p>
         </li>
         <li>
-          <a href="./second-entry/index.html" class="blog__link">JavaScript Async/Await: Making Promises</a>
+            <p class="post__content">
+                <span>Error Handling: </span>I explored using try/catch blocks within async functions for error handling, which felt more intuitive than chaining .then() and .catch().
+            </p>
         </li>
       </ul>
-    </div>
-  </section>
+      <h2 class="post__secondary-title">Helpful Resources:</h2>
+      <ul class="post__list">
+        <li>
+            <a href="https://javascript.info/async-await" rel="noreferrer noopener" target="_blank" class="post__link">JavaScript.info on Async/Await</a>
+            <span> – This resource broke down the concepts clearly and concisely.</span>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/watch?v=7l2-ds_U2Lc" rel="noreferrer noopener" target="_blank" class="post__link">Async/Await Tutorial on YouTube</a>
+            <span> – This video helped solidify my understanding with practical examples.</span>
+        </li>
+      </ul>
+      <h2 class="post__secondary-title">Challenges Encountered:</h2>
+      <ul class="post__list">
+        <li><p class="post__content">One major challenge was refactoring existing promise-based code to async/await. It was a bit tricky to get the hang of the new syntax.</p></li>
+        <li><p class="post__content">Dealing with asynchronous errors and understanding how to catch them effectively.</p></li>
+      </ul>
+      <h3>Problem Solving:</h3>
+      <ul class="post__list">
+        <li><p class="post__content">I dedicated time to rewrite some of my previous projects' functions using async/await, which helped me understand the nuances.</p></li>
+        <li><p class="post__content">I practiced different error-handling scenarios to see how async/await behaves differently from traditional promise chains.</p></li>
+      </ul>
+      <h2 class="post__secondary-title">Next Steps:</h2>
+      <ul class="post__list">
+        <li><p class="post__content">My goal is to integrate async/await more naturally into my daily coding practices.</p></li>
+        <li><p class="post__content">I plan to explore how async/await can be used with API calls in React components.</p></li>
+      </ul>
+      </div>
+      </div>
+    </section>
 
     </main>
     <footer class="footer">
@@ -142,10 +171,10 @@
               <a href="../../index.html#projects" class="mobile-menu__link js-nav-link">Projects</a>
             </li>
             <li>
-              <a href="./index.html" class="mobile-menu__link js-nav-link active">Blog</a>
+              <a href="../index.html" class="mobile-menu__link js-nav-link active">Blog</a>
             </li>
             <li>
-              <a href="../contact/index.html" class="mobile-menu__link js-nav-link">Contact</a>
+              <a href="../../contact/index.html" class="mobile-menu__link js-nav-link">Contact</a>
             </li>
           </ul>  
         </div>
