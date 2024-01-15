@@ -24,9 +24,9 @@
   <header class="header">
     <div class="header__background"></div>
     <div class="container container--header">
-      <a href="../index.html" class="logo"><p>Olena</p><p>Bahrii</p></a>
+      <a href="../index.html" class="logo" aria-label="Home"><p>Olena</p><p>Bahrii</p></a>
       <nav>
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
           <svg class="menu-toggle__button" width="32" height="32">
             <use href="../images/svg/sprite.svg#menu"></use>
           </svg>
@@ -47,73 +47,71 @@
           <li>
             <a href="./index.html" class="site-nav__link js-nav-link active">Contact</a>
           </li>
-    
         </ul>
       </nav>
     </div>
   </header>
   <main>
-      <section class="contact">
-        <div class="container">
-          <h1 class="contact__title">Contact me!</h1>
-          <div class="divider divider--contrast"></div>
-          <ul class="contact-list">
-            <li><a href="https://t.me/Elena_Bagriy" rel="noreferrer noopener" target="_blank" class="contact-list__link">
+    <section class="contact">
+      <div class="container">
+        <h1 class="contact__title">Contact me!</h1>
+        <div class="divider divider--contrast"></div>
+        <ul class="contact-list">
+          <li><a href="https://t.me/Elena_Bagriy" rel="noreferrer noopener" target="_blank" class="contact-list__link" aria-label="Telegram">
+            <svg class="auth-modal-close" width="35" height="35">
+              <use href="../images/svg/sprite.svg#telegram"></use>
+            </svg>
+          </a></li>
+          <li><a href="https://www.linkedin.com/in/elena-bagriy/" rel="noreferrer noopener" target="_blank" class="contact-list__link" aria-label="Linkedin">
+            <svg class="auth-modal-close" width="35" height="35">
+              <use href="../images/svg/sprite.svg#linkedin"></use>
+            </svg>
+          </a></li>
+          <li><a href="https://github.com/ElenaBagriy" rel="noreferrer noopener" target="_blank" class="contact-list__link" aria-label="GitHub">
+            <svg class="auth-modal-close" width="35" height="35">
+              <use href="../images/svg/sprite.svg#github-link"></use>
+            </svg>
+          </a></li>
+          <li>
+            <a href="tel:+41765433827" class="contact-list__link" aria-label="Phone">
               <svg class="auth-modal-close" width="35" height="35">
-                <use href="../images/svg/sprite.svg#telegram"></use>
+                <use href="../images/svg/sprite.svg#phone"></use>
               </svg>
-            </a></li>
-            <li><a href="https://www.linkedin.com/in/elena-bagriy/" rel="noreferrer noopener" target="_blank" class="contact-list__link">
+            </a>
+          </li>
+          <li>
+            <a href="mailto:elena.bagriy1989@gmail.com" class="contact-list__link" aria-label="E-mail">
               <svg class="auth-modal-close" width="35" height="35">
-                <use href="../images/svg/sprite.svg#linkedin"></use>
+                <use href="../images/svg/sprite.svg#email"></use>
               </svg>
-            </a></li>
-            <li><a href="https://github.com/ElenaBagriy" rel="noreferrer noopener" target="_blank" class="contact-list__link">
-              <svg class="auth-modal-close" width="35" height="35">
-                <use href="../images/svg/sprite.svg#github-link"></use>
-              </svg>
-            </a></li>
-            <li>
-              <a href="tel:+41765433827" class="contact-list__link">
-                <svg class="auth-modal-close" width="35" height="35">
-                  <use href="../images/svg/sprite.svg#phone"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="mailto:elena.bagriy1989@gmail.com" class="contact-list__link">
-                <svg class="auth-modal-close" width="35" height="35">
-                  <use href="../images/svg/sprite.svg#email"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-
-          <div class="contact__wrapper">
-            <div class="contact__photo">
-              <picture>
-                <source srcset="../images/portfolio/photo.webp" type="image/webp">
-                <source srcset="../images/portfolio/photo.jpeg" type="image/jpeg">
-                <img src="../images/portfolio/photo.jpeg" alt="Olena Bahrii Photo">
-              </picture>
-            </div>
+            </a>
+          </li>
+        </ul>
+        <div class="contact__wrapper">
+          <div class="contact__photo">
+            <picture>
+              <source srcset="../images/portfolio/photo.webp" type="image/webp">
+              <source srcset="../images/portfolio/photo.jpeg" type="image/jpeg">
+              <img src="../images/portfolio/photo.jpeg" alt="Olena Bahrii Photo">
+            </picture>
+          </div>
             <ul class="contact__text-list">
               <li class="contact__item">
-                  <address>
-                    <p class="contact__adresse"><span class="contact__accent-text">Adresse: </span>Erlenstrasse 10, 8134 Adliswil, Switzerland</p>
-                  </address>
+                <address>
+                  <p class="contact__adresse"><span class="contact__accent-text">Adresse: </span>Erlenstrasse 10, 8134 Adliswil, Switzerland</p>
+                </address>
               </li>
               <li class="contact__item">
-                  <span class="contact__accent-text">Phone number:</span>
-                  <a href="tel:+41765433827" class="contact__link">
-                      076 543 38 27
-                  </a>
+                <span class="contact__accent-text">Phone number:</span>
+                <a href="tel:+41765433827" class="contact__link">
+                  076 543 38 27
+                </a>
               </li>
               <li class="contact__item">
-                  <span class="contact__accent-text">E-mail:</span>
-                  <a href="mailto:elena.bagriy1989@gmail.com" class="contact__link">
-                      elena.bagriy1989@gmail.com
-                  </a>
+                <span class="contact__accent-text">E-mail:</span>
+                <a href="mailto:elena.bagriy1989@gmail.com" class="contact__link">
+                  elena.bagriy1989@gmail.com
+                </a>
               </li>
               <li class="contact__item"><span class="contact__accent-text">Telegram: </span>
                 <a href="https://t.me/Elena_Bagriy" rel="noreferrer noopener" target="_blank" class="contact__link">
@@ -122,64 +120,63 @@
               <li class="contact__item"><span class="contact__accent-text">Linkedin: </span>
                 <a href="https://www.linkedin.com/in/elena-bagriy/" rel="noreferrer noopener" target="_blank" class="contact__link">
                   https://www.linkedin.com/in/elena-bagriy/
-            </a></li>
-            <li class="contact__item"><span class="contact__accent-text">GitHub: </span>
-              <a href="https://github.com/ElenaBagriy" rel="noreferrer noopener" target="_blank" class="contact__link">
-                https://github.com/ElenaBagriy
-          </a></li>
-          </ul>
+                </a></li>
+              <li class="contact__item"><span class="contact__accent-text">GitHub: </span>
+                <a href="https://github.com/ElenaBagriy" rel="noreferrer noopener" target="_blank" class="contact__link">
+                  https://github.com/ElenaBagriy
+              </a></li>
+            </ul>
           </div>
-        </div>
-        
+        </div>  
       </section>
     </main>
     <footer class="footer">
       <div class="footer__background"></div>
       <div class="container">
-          <ul class="contact-list">
-              <li><a href="https://t.me/Elena_Bagriy" rel="noreferrer noopener" target="_blank" class="contact-list__link">
-                  <svg class="auth-modal-close" width="35" height="35">
-                      <use href="../images/svg/sprite.svg#telegram"></use>
-                  </svg>
-              </a></li>
-              <li><a href="https://www.linkedin.com/in/elena-bagriy/" rel="noreferrer noopener" target="_blank" class="contact-list__link">
-                  <svg class="auth-modal-close" width="35" height="35">
-                      <use href="../images/svg/sprite.svg#linkedin"></use>
-                  </svg>
-            </a></li>
-            <li><a href="https://github.com/ElenaBagriy" rel="noreferrer noopener" target="_blank" class="contact-list__link">
+        <ul class="contact-list">
+          <li><a href="https://t.me/Elena_Bagriy" rel="noreferrer noopener" target="_blank" class="contact-list__link" aria-label="Telegram">
               <svg class="auth-modal-close" width="35" height="35">
-                  <use href="../images/svg/sprite.svg#github-link"></use>
+                  <use href="../images/svg/sprite.svg#telegram"></use>
               </svg>
           </a></li>
-            <li>
-              <a href="tel:+41765433827" class="contact-list__link">
-                <svg class="auth-modal-close" width="35" height="35">
-                  <use href="../images/svg/sprite.svg#phone"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="mailto:elena.bagriy1989@gmail.com" class="contact-list__link">
-                <svg class="auth-modal-close" width="35" height="35">
-                  <use href="../images/svg/sprite.svg#email"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <div class="basement-copyright">
-            <p class="basement-title">© 2024 - Olena Bahrii.</p>
-          </div>
+          <li><a href="https://www.linkedin.com/in/elena-bagriy/" rel="noreferrer noopener" target="_blank" class="contact-list__link" aria-label="Linkedin">
+            <svg class="auth-modal-close" width="35" height="35">
+              <use href="../images/svg/sprite.svg#linkedin"></use>
+            </svg>
+          </a></li>
+          <li><a href="https://github.com/ElenaBagriy" rel="noreferrer noopener" target="_blank" class="contact-list__link" aria-label="GitHub">
+            <svg class="auth-modal-close" width="35" height="35">
+              <use href="../images/svg/sprite.svg#github-link"></use>
+            </svg>
+          </a></li>
+          <li>
+            <a href="tel:+41765433827" class="contact-list__link" aria-label="Phone">
+              <svg class="auth-modal-close" width="35" height="35">
+                <use href="../images/svg/sprite.svg#phone"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:elena.bagriy1989@gmail.com" class="contact-list__link" aria-label="E-mail">
+              <svg class="auth-modal-close" width="35" height="35">
+                <use href="../images/svg/sprite.svg#email"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="basement-copyright">
+          <p class="basement-title">© 2024 - Olena Bahrii.</p>
         </div>
-      </footer>
+      </div>
+    </footer>
 
-      <a class="btn-to-top" title="Return to top">
+      <button class="btn-to-top" title="Return to top" aria-label="To top">
         <svg class="auth-modal-close" width="40" height="40">
           <use href="../images/svg/sprite.svg#arrow-up"></use>
         </svg>
-      </a>
+      </button>
       <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu">
+        <button class="menu-toggle js-close-menu" aria-label="Close menu">
           <svg class="menu-toggle__button" width="32" height="32">
             <use href="../images/svg/sprite.svg#close">
             </use>

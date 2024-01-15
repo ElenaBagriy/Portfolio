@@ -24,9 +24,9 @@
   <header class="header">
     <div class="header__background"></div>
     <div class="container container--header">
-      <a href="../index.html" class="logo"><p>Olena</p><p>Bahrii</p></a>
+      <a href="../index.html" class="logo" aria-label="Home"><p>Olena</p><p>Bahrii</p></a>
       <nav>
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
           <svg class="menu-toggle__button" width="32" height="32">
             <use href="../images/svg/sprite.svg#menu"></use>
           </svg>
@@ -47,7 +47,6 @@
           <li>
             <a href="../contact/index.html" class="site-nav__link js-nav-link">Contact</a>
           </li>
-    
         </ul>
       </nav>
     </div>
@@ -56,74 +55,73 @@
   <main>
     <section class="blog">
       <div class="container">
-      <h1 class="blog__title">Blog</h1>
-      <div class="divider divider--contrast"></div>
-      <p class="blog__description">Welcome to "Coding Chronicles with Olena Bahrii", where I document my daily adventures in the world of programming. This blog is a mix of personal learning experiences, useful resources, problem-solving journeys, and future learning goals in programming. Whether you're a seasoned coder, a beginner, or just curious about the field, join me as I navigate the complexities of programming, sharing insights and resources that I find valuable along the way. Let's dive into the code and grow together in this ever-evolving digital landscape!</p>
-    </div>
+        <h1 class="blog__title">Blog</h1>
+        <div class="divider divider--contrast"></div>
+        <p class="blog__description">Welcome to "Coding Chronicles with Olena Bahrii", where I document my daily adventures in the world of programming. This blog is a mix of personal learning experiences, useful resources, problem-solving journeys, and future learning goals in programming. Whether you're a seasoned coder, a beginner, or just curious about the field, join me as I navigate the complexities of programming, sharing insights and resources that I find valuable along the way. Let's dive into the code and grow together in this ever-evolving digital landscape!</p>
+      </div>
     </section>
     <section>
       <div class="container">
-      <h2 class="blog__secondary-title">Coding Chronicles with Olena Bahrii</h2>
-      <div class="divider"></div>
-      <ul class="blog__list">
-        <li>
-          <a href="./first-entry/index.html" class="blog__link">Conquering React Hooks: useState and useEffect</a>
-        </li>
-        <li>
-          <a href="./second-entry/index.html" class="blog__link">JavaScript Async/Await: Making Promises</a>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-    </main>
-    <footer class="footer">
-      <div class="footer__background"></div>
-      <div class="container">
-          <ul class="contact-list">
-              <li><a href="https://t.me/Elena_Bagriy" rel="noreferrer noopener" target="_blank" class="contact-list__link">
-                  <svg class="auth-modal-close" width="35" height="35">
-                      <use href="../images/svg/sprite.svg#telegram"></use>
-                  </svg>
-              </a></li>
-              <li><a href="https://www.linkedin.com/in/elena-bagriy/" rel="noreferrer noopener" target="_blank" class="contact-list__link">
-                  <svg class="auth-modal-close" width="35" height="35">
-                      <use href="../images/svg/sprite.svg#linkedin"></use>
-                  </svg>
+        <h2 class="blog__secondary-title">Coding Chronicles with Olena Bahrii</h2>
+        <div class="divider"></div>
+        <ul class="blog__list">
+          <li>
+            <a href="./first-entry/index.html" class="blog__link">Conquering React Hooks: useState and useEffect</a>
+          </li>
+          <li>
+            <a href="./second-entry/index.html" class="blog__link">JavaScript Async/Await: Making Promises</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__background"></div>
+    <div class="container">
+        <ul class="contact-list">
+            <li><a href="https://t.me/Elena_Bagriy" rel="noreferrer noopener" target="_blank" class="contact-list__link" aria-label="Telegram">
+                <svg class="auth-modal-close" width="35" height="35">
+                    <use href="../images/svg/sprite.svg#telegram"></use>
+                </svg>
             </a></li>
-            <li><a href="https://github.com/ElenaBagriy" rel="noreferrer noopener" target="_blank" class="contact-list__link">
-              <svg class="auth-modal-close" width="35" height="35">
-                  <use href="../images/svg/sprite.svg#github-link"></use>
-              </svg>
+            <li><a href="https://www.linkedin.com/in/elena-bagriy/" rel="noreferrer noopener" target="_blank" class="contact-list__link" aria-label="Linkedin">
+                <svg class="auth-modal-close" width="35" height="35">
+                    <use href="../images/svg/sprite.svg#linkedin"></use>
+                </svg>
           </a></li>
-            <li>
-              <a href="tel:+41765433827" class="contact-list__link">
-                <svg class="auth-modal-close" width="35" height="35">
-                  <use href="../images/svg/sprite.svg#phone"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="mailto:elena.bagriy1989@gmail.com" class="contact-list__link">
-                <svg class="auth-modal-close" width="35" height="35">
-                  <use href="../images/svg/sprite.svg#email"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <div class="basement-copyright">
-            <p class="basement-title">© 2024 - Olena Bahrii.</p>
-          </div>
+          <li><a href="https://github.com/ElenaBagriy" rel="noreferrer noopener" target="_blank" class="contact-list__link" aria-label="GitHub">
+            <svg class="auth-modal-close" width="35" height="35">
+                <use href="../images/svg/sprite.svg#github-link"></use>
+            </svg>
+        </a></li>
+          <li>
+            <a href="tel:+41765433827" class="contact-list__link" aria-label="Phone">
+              <svg class="auth-modal-close" width="35" height="35">
+                <use href="../images/svg/sprite.svg#phone"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:elena.bagriy1989@gmail.com" class="contact-list__link" aria-label="E-mail">
+              <svg class="auth-modal-close" width="35" height="35">
+                <use href="../images/svg/sprite.svg#email"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="basement-copyright">
+          <p class="basement-title">© 2024 - Olena Bahrii.</p>
         </div>
-        <a class="btn-to-top" title="Return to top">
-          <svg class="auth-modal-close" width="40" height="40">
-            <use href="../images/svg/sprite.svg#arrow-up"></use>
-          </svg>
-        </a>
-      </footer>
+      </div>
+      <button class="btn-to-top" title="Return to top" aria-label="To top">
+        <svg class="auth-modal-close" width="40" height="40">
+          <use href="../images/svg/sprite.svg#arrow-up"></use>
+        </svg>
+      </button>
+    </footer>
 
       <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu">
+        <button class="menu-toggle js-close-menu" aria-label="Close menu">
           <svg class="menu-toggle__button" width="32" height="32">
             <use href="../images/svg/sprite.svg#close">
             </use>

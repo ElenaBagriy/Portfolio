@@ -563,71 +563,6 @@ a {
   font-weight: 700;
 }
 
-.form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  flex-direction: column;
-  gap: 25px;
-}
-@media screen and (min-width: 1024px) {
-  .form {
-    width: 744px;
-  }
-}
-
-.form__label {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  gap: 9px;
-  color: var(--primary-text-color);
-  font-family: Inter;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
-.form__input {
-  border-radius: 10px;
-  border: 1px solid var(--divider-color);
-  background: var(--white-color);
-  padding: 10px;
-  color: var(--divider-color);
-  font-family: Inter;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-}
-
-.form__textarea {
-  border-radius: 10px;
-  border: 1px solid var(--divider-color);
-  background: var(--white-color);
-  padding: 10px;
-  color: var(--divider-color);
-  font-family: Inter;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  resize: none;
-  overflow: auto;
-  height: 125px;
-}
-
-.form__wrapper {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 25px;
-}
-
 .footer {
   padding-top: 45px;
   padding-bottom: 45px;
@@ -924,6 +859,8 @@ a {
 .btn-to-top--visible {
   display: block;
   position: fixed;
+  background-color: transparent;
+  border: none;
   right: 30px;
   bottom: 50px;
   opacity: 0.6;
@@ -938,12 +875,6 @@ a {
   cursor: pointer;
   scale: 1.1;
   opacity: 1;
-}
-
-@media screen and (max-width: 1023px) {
-  .modal__button {
-    display: none;
-  }
 }
 
 .menu-toggle {
@@ -1032,23 +963,6 @@ a {
 }
 @media (min-width: 1024px) {
   .mobile-menu__link {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  .modal__button {
-    display: none;
-  }
-}
-
-.mobile-menu__button {
-  padding: 10px 32px;
-  margin-right: auto;
-  margin-left: auto;
-}
-@media (min-width: 1024px) {
-  .mobile-menu__button {
     display: none;
   }
 }/*# sourceMappingURL=index.css.map */
